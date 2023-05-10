@@ -11,6 +11,7 @@ class CategoriesScreen extends StatelessWidget {
     Color.fromARGB(255, 255, 255, 255),
     Color.fromARGB(255, 243, 232, 221),
     Color.fromARGB(255, 241, 236, 235),
+    Color.fromARGB(255, 241, 236, 235),
   ];
 
   List<Map<String, dynamic>> catInfo = [

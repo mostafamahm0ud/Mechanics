@@ -1,6 +1,5 @@
 import 'package:card_swiper/card_swiper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:mechanics/consts/consts.dart';
 import 'package:mechanics/inner_screens/feeds_screen.dart';
 import 'package:mechanics/models/products_model.dart';
@@ -8,7 +7,6 @@ import 'package:mechanics/provider/products_provider.dart';
 import 'package:mechanics/services/global_methods.dart';
 import 'package:mechanics/services/utils.dart';
 import 'package:mechanics/widget/feed_items.dart';
-import 'package:mechanics/widget/onsale_widget.dart';
 import 'package:mechanics/widget/text_widget.dart';
 import 'package:provider/provider.dart';
 
