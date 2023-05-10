@@ -32,9 +32,11 @@ class _HomeScreenState extends State<HomeScreen> {
     List<ProductModel> productsOnSale = productProviders.getOnSaleProducts;
     return Scaffold(
       appBar: AppBar(
-        title: Image.asset(
-          "assets/images/MLOGO.png",
-          width: 90,
+        title: Center(
+          child: Image.asset(
+            "assets/images/MLOGO.png",
+            width: 90,
+          ),
         ),
         backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
       ),
@@ -50,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     fit: BoxFit.fill,
                   );
                 },
-                autoplay: true,
+                autoplay: false,
                 itemCount: Constss.offerImages.length,
                 pagination: const SwiperPagination(
                     alignment: Alignment.bottomCenter,
