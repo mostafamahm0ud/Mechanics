@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:mechanics/widget/feed_items.dart';
 import 'package:mechanics/widget/text_widget.dart';
@@ -40,7 +39,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
       appBar: AppBar(
         leading: const BackWidget(),
         elevation: 0,
-        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
         centerTitle: true,
         title: TextWidget(
           text: catName,
@@ -72,12 +71,14 @@ class _CategoryScreenState extends State<CategoryScreen> {
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                           borderSide: const BorderSide(
-                              color: Colors.greenAccent, width: 1),
+                              color: Color.fromRGBO(119, 16, 76, 0.644),
+                              width: 1),
                         ),
                         enabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(12),
                           borderSide: const BorderSide(
-                              color: Colors.greenAccent, width: 1),
+                              color: Color.fromRGBO(119, 16, 76, 0.644),
+                              width: 1),
                         ),
                         hintText: "What's in your mind",
                         prefixIcon: const Icon(Icons.search),
@@ -89,7 +90,7 @@ class _CategoryScreenState extends State<CategoryScreen> {
                           icon: Icon(
                             Icons.close,
                             color: _searchTextFocusNode.hasFocus
-                                ? Colors.red
+                                ? Color.fromRGBO(119, 16, 76, 0.644)
                                 : color,
                           ),
                         ),

@@ -63,18 +63,19 @@ class _ProductDetailsState extends State<ProductDetails> {
       },
       child: Scaffold(
         appBar: AppBar(
-            leading: InkWell(
-              borderRadius: BorderRadius.circular(12),
-              onTap: () =>
-                  Navigator.canPop(context) ? Navigator.pop(context) : null,
-              child: Icon(
-                IconlyLight.arrowLeft2,
-                color: color,
-                size: 24,
-              ),
+          leading: InkWell(
+            borderRadius: BorderRadius.circular(12),
+            onTap: () =>
+                Navigator.canPop(context) ? Navigator.pop(context) : null,
+            child: Icon(
+              IconlyLight.arrowLeft2,
+              color: color,
+              size: 24,
             ),
-            elevation: 0,
-            backgroundColor: Theme.of(context).scaffoldBackgroundColor),
+          ),
+          elevation: 0,
+          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        ),
         body: Column(children: [
           Flexible(
             flex: 2,
@@ -128,8 +129,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                       children: [
                         TextWidget(
                           text: '\$${usedPrice.toStringAsFixed(2)}',
-                          color: Colors.green,
-                          textSize: 22,
+                          color: Colors.black,
+                          textSize: 30,
                           isTitle: true,
                         ),
                         TextWidget(
@@ -157,7 +158,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           padding: const EdgeInsets.symmetric(
                               vertical: 4, horizontal: 8),
                           decoration: BoxDecoration(
-                              color: const Color.fromRGBO(63, 200, 101, 1),
+                              color: const Color.fromRGBO(119, 16, 76, 0.644),
                               borderRadius: BorderRadius.circular(5)),
                           child: TextWidget(
                             text: 'Free delivery',
@@ -188,7 +189,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           }
                         },
                         icon: CupertinoIcons.minus,
-                        color: Colors.red,
+                        color: Color.fromARGB(255, 92, 16, 39),
                       ),
                       const SizedBox(
                         width: 5,
@@ -204,7 +205,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                             border: UnderlineInputBorder(),
                           ),
                           textAlign: TextAlign.center,
-                          cursorColor: Colors.green,
+                          cursorColor: Color.fromRGBO(119, 16, 76, 0.644),
                           enabled: true,
                           inputFormatters: [
                             FilteringTextInputFormatter.allow(RegExp('[0-9]')),
@@ -230,7 +231,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                           });
                         },
                         icon: CupertinoIcons.plus,
-                        color: Colors.green,
+                        color: Color.fromARGB(75, 38, 55, 86),
                       ),
                     ],
                   ),
@@ -255,7 +256,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                             children: [
                               TextWidget(
                                 text: 'Total',
-                                color: Colors.red.shade300,
+                                color: Colors.white,
                                 textSize: 20,
                                 isTitle: true,
                               ),
@@ -289,7 +290,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                         ),
                         Flexible(
                           child: Material(
-                            color: Colors.green,
+                            color: Color.fromRGBO(119, 16, 76, 0.644),
                             borderRadius: BorderRadius.circular(10),
                             child: InkWell(
                               onTap: _isInCart

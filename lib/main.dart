@@ -5,7 +5,6 @@ import 'package:mechanics/fetch_screen.dart';
 import 'package:mechanics/firebase_options.dart';
 import 'package:mechanics/inner_screens/category_screen.dart';
 import 'package:mechanics/inner_screens/feeds_screen.dart';
-import 'package:mechanics/inner_screens/on_sale_screen.dart';
 import 'package:mechanics/inner_screens/product_detiails.dart';
 import 'package:mechanics/provider/cart_provider.dart';
 import 'package:mechanics/provider/orders_provider.dart';
@@ -107,7 +106,6 @@ class _MechanicsAppState extends State<MechanicsApp> {
                   theme: Styles.themeData(themeProvider.getDarkTheme, context),
                   home: const FetchScreen(),
                   routes: {
-                    OnSaleScreen.routeName: (ctx) => const OnSaleScreen(),
                     FeedsScreen.routeName: (ctx) => const FeedsScreen(),
                     ProductDetails.routeName: (ctx) => const ProductDetails(),
                     WishlistScreen.routeName: (ctx) => const WishlistScreen(),
