@@ -54,7 +54,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
       // ),
       body: _pages[_selectedIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: _isDark ? Theme.of(context).cardColor : Colors.white,
+        backgroundColor: _isDark ? Theme.of(context).cardColor : Color.fromARGB(68, 139, 32, 85),
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
@@ -80,7 +80,7 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
                 badgeAnimation: const badge.BadgeAnimation.slide(),
                 badgeStyle: badge.BadgeStyle(
                   shape: badge.BadgeShape.circle,
-                  badgeColor: Colors.blue,
+                  badgeColor: Color.fromARGB(255, 139, 32, 86),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 position: badge.BadgePosition.topEnd(top: -7, end: -7),

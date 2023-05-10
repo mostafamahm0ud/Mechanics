@@ -112,7 +112,7 @@ class _FeedsWidgetState extends State<FeedsWidget> {
                           flex: 6,
                           child: FittedBox(
                             child: TextWidget(
-                              text: productModel.isPiece ? 'Piece' : 'kg',
+                              text: productModel.isPiece ? 'Piece' : 'collection',
                               color: color,
                               textSize: 20,
                               isTitle: true,

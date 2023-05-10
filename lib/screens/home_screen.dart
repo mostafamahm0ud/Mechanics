@@ -48,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 pagination: const SwiperPagination(
                     alignment: Alignment.bottomCenter,
                     builder: DotSwiperPaginationBuilder(
-                        color: Colors.white, activeColor: Colors.red)),
+                        color: Color.fromARGB(153, 255, 255, 255), activeColor: Color.fromRGBO(119, 16, 76, 1))),
                 // control: const SwiperControl(color: Colors.black),
               ),
             ),
@@ -63,7 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: TextWidget(
                 text: 'View all',
                 maxLines: 1,
-                color: Colors.blue,
+                color: Color.fromRGBO(119, 16, 76, 0.644),
                 textSize: 20,
               ),
             ),
@@ -78,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     children: [
                       TextWidget(
                         text: 'On sale'.toUpperCase(),
-                        color: Colors.red,
+                        color: Color.fromARGB(255, 139, 32, 86),
                         textSize: 22,
                         isTitle: true,
                       ),
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       const Icon(
                         IconlyLight.discount,
-                        color: Colors.red,
+                        color: Color.fromARGB(155, 139, 32, 85),
                       ),
                     ],
                   ),
@@ -135,7 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: TextWidget(
                       text: 'Browse all',
                       maxLines: 1,
-                      color: Colors.blue,
+                      color: Color.fromARGB(97, 139, 32, 85),
                       textSize: 20,
                     ),
                   ),
@@ -148,7 +148,7 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisCount: 2,
               padding: EdgeInsets.zero,
               // crossAxisSpacing: 10,
-              childAspectRatio: size.width / (size.height * 0.61),
+              childAspectRatio: size.width / (size.height * 0.66),
               children: List.generate(
                   allProducts.length < 4
                       ? allProducts.length // length 3

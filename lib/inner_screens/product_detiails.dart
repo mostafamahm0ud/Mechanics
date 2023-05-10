@@ -1,4 +1,3 @@
-
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
@@ -134,7 +133,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                           isTitle: true,
                         ),
                         TextWidget(
-                          text: getCurrProduct.isPiece ? '/Piece' : '/Kg',
+                          text:
+                              getCurrProduct.isPiece ? '/Piece' : '/collection',
                           color: color,
                           textSize: 12,
                           isTitle: false,

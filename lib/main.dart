@@ -103,7 +103,7 @@ class _MechanicsAppState extends State<MechanicsApp> {
                 builder: (context, themeProvider, child) {
               return MaterialApp(
                   debugShowCheckedModeBanner: false,
-                  title: 'Flutter Demo',
+                  title: 'Mechanics App',
                   theme: Styles.themeData(themeProvider.getDarkTheme, context),
                   home: const FetchScreen(),
                   routes: {
