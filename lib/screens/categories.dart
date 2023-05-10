@@ -17,7 +17,7 @@ class CategoriesScreen extends StatelessWidget {
 List<Map<String, dynamic>> catInfo = [
     {
       'imgPath': 'assets/images/category/categ-1.png',
-      'catText': 'Spare Parts',
+      'catText': 'Car_Lantern',
     },
     {
       'imgPath': 'assets/images/category/categ-2.png',
@@ -26,6 +26,10 @@ List<Map<String, dynamic>> catInfo = [
     {
       'imgPath': 'assets/images/category/categ-3.png',
       'catText': 'Tires',
+    },
+    {
+      'imgPath': 'assets/images/category/categ-3.png',
+      'catText': 'engine',
     },
   ];
   @override
