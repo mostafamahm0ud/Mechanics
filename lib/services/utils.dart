@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:mechanics/provider/dark_theme_provider.dart';
 import 'package:provider/provider.dart';

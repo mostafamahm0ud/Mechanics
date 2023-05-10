@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:mechanics/models/products_model.dart';
 import 'package:mechanics/provider/products_provider.dart';
@@ -29,10 +28,12 @@ class _FeedsScreenState extends State<FeedsScreen> {
 
   @override
   void initState() {
-    final productsProvider = Provider.of<ProductsProvider>(context, listen: false);
+    final productsProvider =
+        Provider.of<ProductsProvider>(context, listen: false);
     productsProvider.fetchProducts();
     super.initState();
   }
+
   List<ProductModel> listProdcutSearch = [];
   @override
   Widget build(BuildContext context) {
@@ -44,7 +45,7 @@ class _FeedsScreenState extends State<FeedsScreen> {
       appBar: AppBar(
         leading: const BackWidget(),
         elevation: 0,
-        backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+        backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
         centerTitle: true,
         title: TextWidget(
           text: 'All Products',
@@ -70,13 +71,13 @@ class _FeedsScreenState extends State<FeedsScreen> {
                 decoration: InputDecoration(
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide:
-                        const BorderSide(color: Colors.greenAccent, width: 1),
+                    borderSide: const BorderSide(
+                        color: Color.fromRGBO(119, 16, 76, 0.644), width: 1),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide:
-                        const BorderSide(color: Colors.greenAccent, width: 1),
+                    borderSide: const BorderSide(
+                        color: Color.fromRGBO(119, 16, 76, 0.644), width: 1),
                   ),
                   hintText: "What's in your mind",
                   prefixIcon: const Icon(Icons.search),
@@ -87,7 +88,9 @@ class _FeedsScreenState extends State<FeedsScreen> {
                     },
                     icon: Icon(
                       Icons.close,
-                      color: _searchTextFocusNode.hasFocus ? Colors.red : color,
+                      color: _searchTextFocusNode.hasFocus
+                          ? Color.fromRGBO(119, 16, 76, 0.644)
+                          : color,
                     ),
                   ),
                 ),

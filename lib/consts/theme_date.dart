@@ -16,7 +16,7 @@ class Styles {
             brightness: isDarkTheme ? Brightness.dark : Brightness.light,
           ),
       cardColor: isDarkTheme
-          ? Color.fromARGB(255, 0, 0, 0)
+          ? Color.fromRGBO(119, 16, 76, 0.644)
           : Color.fromARGB(143, 253, 253, 253),
       canvasColor: isDarkTheme
           ? Color.fromRGBO(119, 16, 76, 0.644)

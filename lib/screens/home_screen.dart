@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:mechanics/consts/consts.dart';
 import 'package:mechanics/inner_screens/feeds_screen.dart';
-import 'package:mechanics/inner_screens/on_sale_screen.dart';
 import 'package:mechanics/models/products_model.dart';
 import 'package:mechanics/provider/products_provider.dart';
 import 'package:mechanics/services/global_methods.dart';
@@ -29,7 +28,6 @@ class _HomeScreenState extends State<HomeScreen> {
     Size size = utils.getScreenSize;
     final productProviders = Provider.of<ProductsProvider>(context);
     List<ProductModel> allProducts = productProviders.getProducts;
-    List<ProductModel> productsOnSale = productProviders.getOnSaleProducts;
     return Scaffold(
       appBar: AppBar(
         title: Center(
@@ -64,66 +62,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(
               height: 6,
-            ),
-            TextButton(
-              onPressed: () {
-                GlobalMethods.navigateTo(
-                    ctx: context, routeName: OnSaleScreen.routeName);
-              },
-              child: TextWidget(
-                text: 'View all',
-                maxLines: 1,
-                color: Color.fromRGBO(119, 16, 76, 0.644),
-                textSize: 20,
-              ),
-            ),
-            const SizedBox(
-              height: 6,
-            ),
-            Row(
-              children: [
-                RotatedBox(
-                  quarterTurns: -1,
-                  child: Row(
-                    children: [
-                      TextWidget(
-                        text: 'On sale'.toUpperCase(),
-                        color: Color.fromARGB(255, 139, 32, 86),
-                        textSize: 22,
-                        isTitle: true,
-                      ),
-                      const SizedBox(
-                        width: 5,
-                      ),
-                      const Icon(
-                        IconlyLight.discount,
-                        color: Color.fromARGB(155, 139, 32, 85),
-                      ),
-                    ],
-                  ),
-                ),
-                const SizedBox(
-                  width: 8,
-                ),
-                Flexible(
-                  child: SizedBox(
-                    height: size.height * 0.24,
-                    child: ListView.builder(
-                        itemCount: productsOnSale.length < 10
-                            ? productsOnSale.length
-                            : 10,
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (ctx, index) {
-                          return ChangeNotifierProvider.value(
-                              value: productsOnSale[index],
-                              child: const OnSaleWidget());
-                        }),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 10,
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),

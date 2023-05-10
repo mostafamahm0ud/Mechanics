@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:mechanics/widget/categories_widget.dart';
 import 'package:mechanics/widget/text_widget.dart';
@@ -6,7 +5,7 @@ import 'package:mechanics/widget/text_widget.dart';
 import '../services/utils.dart';
 
 class CategoriesScreen extends StatelessWidget {
-   CategoriesScreen({Key? key}) : super(key: key);
+  CategoriesScreen({Key? key}) : super(key: key);
 
   List<Color> gridColors = [
     Color.fromARGB(255, 255, 255, 255),
@@ -14,7 +13,7 @@ class CategoriesScreen extends StatelessWidget {
     Color.fromARGB(255, 241, 236, 235),
   ];
 
-List<Map<String, dynamic>> catInfo = [
+  List<Map<String, dynamic>> catInfo = [
     {
       'imgPath': 'assets/images/category/categ-1.png',
       'catText': 'Car_Lantern',
@@ -34,13 +33,12 @@ List<Map<String, dynamic>> catInfo = [
   ];
   @override
   Widget build(BuildContext context) {
-
     final utils = Utils(context);
     Color color = utils.color;
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+          backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
           title: TextWidget(
             text: 'Categories',
             color: color,
@@ -54,7 +52,7 @@ List<Map<String, dynamic>> catInfo = [
             crossAxisCount: 2,
             childAspectRatio: 240 / 250,
             crossAxisSpacing: 10, // Vertical spacing
-            mainAxisSpacing: 10, // Horizontal spacing 
+            mainAxisSpacing: 10, // Horizontal spacing
             children: List.generate(catInfo.length, (index) {
               return CategoriesWidget(
                 catText: catInfo[index]['catText'],
