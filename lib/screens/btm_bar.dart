@@ -54,13 +54,16 @@ class _BottomBarScreenState extends State<BottomBarScreen> {
       // ),
       body: _pages[_selectedIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: _isDark ? Theme.of(context).cardColor : Color.fromARGB(68, 139, 32, 85),
+        backgroundColor: _isDark
+            ? Theme.of(context).cardColor
+            : Color.fromRGBO(119, 16, 76, 0.644),
         type: BottomNavigationBarType.fixed,
         showSelectedLabels: false,
         showUnselectedLabels: false,
         currentIndex: _selectedIndex,
-        unselectedItemColor: _isDark ? Colors.white10 : Colors.black12,
-        selectedItemColor: _isDark ? Colors.lightBlue.shade200 : Colors.black87,
+        unselectedItemColor:
+            _isDark ? Colors.white : const Color.fromARGB(255, 230, 216, 216),
+        selectedItemColor: _isDark ? Colors.white : Colors.black87,
         onTap: _selectedPage,
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(

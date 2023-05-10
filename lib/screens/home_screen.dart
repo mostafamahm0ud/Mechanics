@@ -31,6 +31,13 @@ class _HomeScreenState extends State<HomeScreen> {
     List<ProductModel> allProducts = productProviders.getProducts;
     List<ProductModel> productsOnSale = productProviders.getOnSaleProducts;
     return Scaffold(
+      appBar: AppBar(
+        title: Image.asset(
+          "assets/images/MLOGO.png",
+          width: 90,
+        ),
+        backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -48,7 +55,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 pagination: const SwiperPagination(
                     alignment: Alignment.bottomCenter,
                     builder: DotSwiperPaginationBuilder(
-                        color: Color.fromARGB(153, 255, 255, 255), activeColor: Color.fromRGBO(119, 16, 76, 1))),
+                        color: Color.fromARGB(153, 255, 255, 255),
+                        activeColor: Color.fromRGBO(119, 16, 76, 1))),
                 // control: const SwiperControl(color: Colors.black),
               ),
             ),
