@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:mechanics/widget/text_widget.dart';
 import 'package:provider/provider.dart';
@@ -36,7 +35,7 @@ class CategoriesWidget extends StatelessWidget {
             width: 2,
           ),
         ),
-        child: Column(children: [
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           // Container for the image
           Container(
             height: _screenWidth * 0.3,

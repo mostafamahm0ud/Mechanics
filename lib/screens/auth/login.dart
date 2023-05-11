@@ -1,4 +1,3 @@
-
 import 'package:card_swiper/card_swiper.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
@@ -81,20 +80,8 @@ class _LoginScreenState extends State<LoginScreen> {
       body: LoadingManager(
         isLoading: _isLoading,
         child: Stack(children: [
-          Swiper(
-            duration: 800,
-            autoplayDelay: 8000,
-            itemBuilder: (BuildContext context, int index) {
-              return Image.asset(
-                Constss.authImagesPaths[index],
-                fit: BoxFit.cover,
-              );
-            },
-            autoplay: true,
-            itemCount: Constss.authImagesPaths.length,
-          ),
           Container(
-            color: Colors.black.withOpacity(0.7),
+            color: Color.fromRGBO(119, 16, 76, 1),
           ),
           SingleChildScrollView(
             child: Padding(
@@ -104,8 +91,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  const SizedBox(
-                    height: 120.0,
+                  Center(
+                    child: Container(
+                      height: 120.0,
+                      child: Image.asset(
+                        "assets/images/MLOGO.png",
+                      ),
+                    ),
                   ),
                   TextWidget(
                     text: 'Welcome Back',

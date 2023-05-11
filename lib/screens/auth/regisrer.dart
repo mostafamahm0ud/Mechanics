@@ -106,23 +106,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
         isLoading: _isLoading,
         child: Stack(
           children: <Widget>[
-            Swiper(
-              duration: 800,
-              autoplayDelay: 6000,
-
-              itemBuilder: (BuildContext context, int index) {
-                return Image.asset(
-                  Constss.authImagesPaths[index],
-                  fit: BoxFit.cover,
-                );
-              },
-              autoplay: true,
-              itemCount: Constss.authImagesPaths.length,
-
-              // control: const SwiperControl(),
-            ),
             Container(
-              color: Colors.black.withOpacity(0.7),
+              color: Color.fromRGBO(119, 16, 76, 1),
             ),
             SingleChildScrollView(
               padding: const EdgeInsets.all(20),
@@ -132,7 +117,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   const SizedBox(
-                    height: 60.0,
+                    height: 20.0,
                   ),
                   InkWell(
                     borderRadius: BorderRadius.circular(12),
@@ -145,8 +130,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       size: 24,
                     ),
                   ),
-                  const SizedBox(
-                    height: 40.0,
+                  Center(
+                    child: Container(
+                      height: 110.0,
+                      child: Image.asset(
+                        "assets/images/MLOGO.png",
+                      ),
+                    ),
                   ),
                   TextWidget(
                     text: 'Welcome',

@@ -9,14 +9,14 @@ class CategoriesScreen extends StatelessWidget {
 
   List<Color> gridColors = [
     Color.fromARGB(255, 255, 255, 255),
-    Color.fromARGB(255, 243, 232, 221),
-    Color.fromARGB(255, 241, 236, 235),
-    Color.fromARGB(255, 241, 236, 235),
+    Color.fromARGB(255, 255, 255, 255),
+    Color.fromARGB(255, 255, 255, 255),
+    Color.fromARGB(255, 255, 255, 255),
   ];
 
   List<Map<String, dynamic>> catInfo = [
     {
-      'imgPath': 'assets/images/category/categ-1.png',
+      'imgPath': 'assets/images/Car_Lantern1.png',
       'catText': 'Car_Lantern',
     },
     {
@@ -28,7 +28,7 @@ class CategoriesScreen extends StatelessWidget {
       'catText': 'Tires',
     },
     {
-      'imgPath': 'assets/images/category/categ-3.png',
+      'imgPath': 'assets/images/Car-Engine1.png',
       'catText': 'engine',
     },
   ];

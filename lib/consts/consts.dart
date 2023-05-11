@@ -4,9 +4,4 @@ class Constss {
     'assets/images/CARS.png',
     'assets/images/img10.png',
   ];
-  static List<String> authImagesPaths = [
-    'assets/images/logo.png',
-    'assets/images/back.png',
-    'assets/images/back-2.png',
-  ];
 }

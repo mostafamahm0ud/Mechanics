@@ -1,4 +1,3 @@
-
 import 'package:card_swiper/card_swiper.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -75,25 +74,12 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
   Widget build(BuildContext context) {
     Size size = Utils(context).getScreenSize;
     return Scaffold(
-      // backgroundColor: Colors.blue,
       body: LoadingManager(
         isLoading: _isLoading,
         child: Stack(
           children: [
-            Swiper(
-              itemBuilder: (BuildContext context, int index) {
-                return Image.asset(
-                  Constss.authImagesPaths[index],
-                  fit: BoxFit.cover,
-                );
-              },
-              autoplay: true,
-              itemCount: Constss.authImagesPaths.length,
-
-              // control: const SwiperControl(),
-            ),
             Container(
-              color: Colors.black.withOpacity(0.7),
+              color: Color.fromRGBO(119, 16, 76, 1),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
@@ -103,11 +89,19 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(
-                    height: size.height * 0.1,
+                    height: 50.0,
                   ),
                   const BackWidget(),
+                  Center(
+                    child: Container(
+                      height: 120.0,
+                      child: Image.asset(
+                        "assets/images/MLOGO.png",
+                      ),
+                    ),
+                  ),
                   const SizedBox(
-                    height: 20,
+                    height: 10,
                   ),
                   TextWidget(
                     text: 'Forget password',
