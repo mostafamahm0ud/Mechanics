@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -35,7 +34,7 @@ class WishlistScreen extends StatelessWidget {
                 leading: const BackWidget(),
                 automaticallyImplyLeading: false,
                 elevation: 0,
-                backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
                 title: TextWidget(
                   text: 'Wishlist (${wishlistItemsList.length})',
                   color: color,

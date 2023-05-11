@@ -1,4 +1,3 @@
-
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -108,7 +107,7 @@ class _CartWidgetState extends State<CartWidget> {
                                     });
                                   }
                                 },
-                                color: Colors.red,
+                                color: Color.fromARGB(255, 92, 16, 39),
                                 icon: CupertinoIcons.minus,
                               ),
                               Flexible(
@@ -149,7 +148,7 @@ class _CartWidgetState extends State<CartWidget> {
                                         .toString();
                                   });
                                 },
-                                color: Colors.green,
+                                color: Color.fromARGB(75, 38, 55, 86),
                                 icon: CupertinoIcons.plus,
                               )
                             ],
@@ -169,7 +168,6 @@ class _CartWidgetState extends State<CartWidget> {
                                 productId: cartModel.productId,
                                 quantity: cartModel.quantity,
                               );
-                              
                             },
                             child: const Icon(
                               CupertinoIcons.cart_badge_minus,

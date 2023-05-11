@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:mechanics/provider/viewed_provider.dart';
@@ -65,8 +64,7 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
             color: color,
             textSize: 24.0,
           ),
-          backgroundColor:
-              Theme.of(context).scaffoldBackgroundColor.withOpacity(0.9),
+          backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
         ),
         body: ListView.builder(
             itemCount: viewedProdItemsList.length,

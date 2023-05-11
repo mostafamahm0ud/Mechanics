@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:mechanics/inner_screens/feeds_screen.dart';
 import 'package:mechanics/services/global_methods.dart';
@@ -48,11 +47,17 @@ class EmptyScreen extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              TextWidget(text: title, color: Colors.cyan, textSize: 20),
+              TextWidget(
+                  text: title,
+                  color: Color.fromRGBO(119, 16, 76, 0.644),
+                  textSize: 20),
               const SizedBox(
                 height: 20,
               ),
-              TextWidget(text: subtitle, color: Colors.cyan, textSize: 20),
+              TextWidget(
+                  text: subtitle,
+                  color: Color.fromRGBO(119, 16, 76, 0.644),
+                  textSize: 20),
               SizedBox(
                 height: size.height * 0.1,
               ),

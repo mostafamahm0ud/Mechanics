@@ -1,4 +1,3 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
@@ -94,13 +93,13 @@ class _UserScreenState extends State<UserScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(
-                  height: 15,
+                  height: 10,
                 ),
                 RichText(
                   text: TextSpan(
                     text: 'Hi,  ',
                     style: const TextStyle(
-                      color: Colors.cyan,
+                      color: Color.fromRGBO(119, 16, 76, 0.644),
                       fontSize: 27,
                       fontWeight: FontWeight.bold,
                     ),
@@ -133,6 +132,7 @@ class _UserScreenState extends State<UserScreen> {
                 ),
                 const Divider(
                   thickness: 2,
+                  color: Color.fromRGBO(119, 16, 76, 0.644),
                 ),
                 const SizedBox(
                   height: 20,

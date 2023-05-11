@@ -129,8 +129,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                       children: [
                         TextWidget(
                           text: '\$${usedPrice.toStringAsFixed(2)}',
-                          color: Colors.black,
-                          textSize: 30,
+                          color: Colors.green,
+                          textSize: 22,
                           isTitle: true,
                         ),
                         TextWidget(

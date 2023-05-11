@@ -1,4 +1,3 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +36,7 @@ class CartScreen extends StatelessWidget {
             appBar: AppBar(
                 automaticallyImplyLeading: false,
                 elevation: 0,
-                backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
                 title: TextWidget(
                   text: 'Cart (${cartItemsList.length})',
                   color: color,
@@ -104,7 +103,7 @@ class CartScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 12),
         child: Row(children: [
           Material(
-            color: Colors.green,
+            color: Color.fromRGBO(119, 16, 76, 0.644),
             borderRadius: BorderRadius.circular(10),
             child: InkWell(
               borderRadius: BorderRadius.circular(10),

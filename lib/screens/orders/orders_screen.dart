@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:mechanics/provider/orders_provider.dart';
 import 'package:mechanics/screens/orders/orders_widget.dart';
@@ -46,9 +45,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
                       textSize: 24.0,
                       isTitle: true,
                     ),
-                    backgroundColor: Theme.of(context)
-                        .scaffoldBackgroundColor
-                        .withOpacity(0.9),
+                    backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
                   ),
                   body: ListView.separated(
                     itemCount: ordersList.length,
