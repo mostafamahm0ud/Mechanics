@@ -1,4 +1,3 @@
-
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -58,18 +57,21 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
             ),
             Column(
               children: [
-                TextWidget(
-                  text: getCurrProduct.title,
-                  color: color,
-                  textSize: 24,
-                  isTitle: true,
+                Container(
+                  width: 170,
+                  child: TextWidget(
+                    text: getCurrProduct.title,
+                    color: color,
+                    textSize: 24,
+                    isTitle: true,
+                  ),
                 ),
                 const SizedBox(
                   height: 12,
                 ),
                 TextWidget(
                   text: '\$${usedPrice.toStringAsFixed(2)}',
-                  color: color,
+                  color: Colors.green,
                   textSize: 20,
                   isTitle: false,
                 ),
@@ -85,7 +87,7 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
                     borderRadius: BorderRadius.circular(12),
                     onTap: _isInCart
                         ? null
-                        : ()async {
+                        : () async {
                             final User? user = authInstance.currentUser;
 
                             if (user == null) {
@@ -94,10 +96,11 @@ class _ViewedRecentlyWidgetState extends State<ViewedRecentlyWidget> {
                                   context: context);
                               return;
                             }
-                        await    GlobalMethods.addToCart(
+                            await GlobalMethods.addToCart(
                                 productId: getCurrProduct.id,
                                 quantity: 1,
-                                context: context);await cartProvider.fetchCart();
+                                context: context);
+                            await cartProvider.fetchCart();
                             // cartProvider.addProductsToCart(
                             //   productId: getCurrProduct.id,
                             //   quantity: 1,

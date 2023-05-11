@@ -11,6 +11,7 @@ import 'package:mechanics/screens/loading_manager.dart';
 import 'package:mechanics/screens/orders/orders_screen.dart';
 import 'package:mechanics/screens/viewed_recently/viewed_recently.dart';
 import 'package:mechanics/screens/wishlist/wishlist_screen.dart';
+import 'package:mechanics/screens/contact_us.dart';
 import 'package:mechanics/services/global_methods.dart';
 import 'package:mechanics/widget/text_widget.dart';
 import 'package:provider/provider.dart';
@@ -171,6 +172,15 @@ class _UserScreenState extends State<UserScreen> {
                     GlobalMethods.navigateTo(
                         ctx: context,
                         routeName: ViewedRecentlyScreen.routeName);
+                  },
+                  color: color,
+                ),
+                _listTiles(
+                  title: 'Contact Us',
+                  icon: IconlyLight.message,
+                  onPressed: () {
+                    GlobalMethods.navigateTo(
+                        ctx: context, routeName: ContactUsScreen.routeName);
                   },
                   color: color,
                 ),

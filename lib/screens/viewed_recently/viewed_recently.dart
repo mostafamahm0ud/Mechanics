@@ -46,7 +46,9 @@ class _ViewedRecentlyScreenState extends State<ViewedRecentlyScreen> {
                 GlobalMethods.warningDialog(
                     title: 'Empty your history?',
                     subtitle: 'Are you sure?',
-                    fct: () {},
+                    fct: () {
+                      viewedProdProvider.clearHistory();
+                    },
                     context: context);
               },
               icon: Icon(
