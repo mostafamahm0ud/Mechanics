@@ -1,8 +1,6 @@
-import 'package:card_swiper/card_swiper.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:mechanics/consts/consts.dart';
 import 'package:mechanics/consts/firebase_consts.dart';
 import 'package:mechanics/fetch_screen.dart';
 import 'package:mechanics/screens/auth/forget_pass.dart';
@@ -81,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
         isLoading: _isLoading,
         child: Stack(children: [
           Container(
-            color: Color.fromRGBO(119, 16, 76, 1),
+            color: Color.fromRGBO(119, 16, 76, 0.644),
           ),
           SingleChildScrollView(
             child: Padding(
@@ -146,7 +144,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 12,
                           ),
                           //Password
@@ -225,7 +223,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   const SizedBox(
                     height: 10,
                   ),
-                  GoogleButton(),
+                  const GoogleButton(),
                   const SizedBox(
                     height: 10,
                   ),

@@ -50,7 +50,7 @@ class _FetchScreenState extends State<FetchScreen> {
       body: Stack(
         children: [
           Container(
-            color: Color.fromRGBO(119, 16, 76, 1),
+            color: Color.fromRGBO(119, 16, 76, 0.644),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,

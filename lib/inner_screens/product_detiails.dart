@@ -274,7 +274,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                                       isTitle: true,
                                     ),
                                     TextWidget(
-                                      text: '${_quantityTextController.text}Kg',
+                                      text:
+                                          '${_quantityTextController.text}piece',
                                       color: color,
                                       textSize: 16,
                                       isTitle: false,

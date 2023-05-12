@@ -11,7 +11,7 @@ import 'package:mechanics/screens/loading_manager.dart';
 import 'package:mechanics/screens/orders/orders_screen.dart';
 import 'package:mechanics/screens/viewed_recently/viewed_recently.dart';
 import 'package:mechanics/screens/wishlist/wishlist_screen.dart';
-import 'package:mechanics/screens/contact_us.dart';
+import 'package:mechanics/screens/auth/contact_us.dart';
 import 'package:mechanics/services/global_methods.dart';
 import 'package:mechanics/widget/text_widget.dart';
 import 'package:provider/provider.dart';

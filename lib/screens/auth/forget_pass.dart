@@ -1,8 +1,6 @@
-import 'package:card_swiper/card_swiper.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:mechanics/consts/consts.dart';
 import 'package:mechanics/consts/firebase_consts.dart';
 import 'package:mechanics/screens/loading_manager.dart';
 import 'package:mechanics/services/global_methods.dart';
@@ -79,7 +77,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
         child: Stack(
           children: [
             Container(
-              color: Color.fromRGBO(119, 16, 76, 1),
+              color: Color.fromRGBO(119, 16, 76, 0.644),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(
@@ -88,7 +86,7 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 50.0,
                   ),
                   const BackWidget(),

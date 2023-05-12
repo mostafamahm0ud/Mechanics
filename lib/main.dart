@@ -10,7 +10,7 @@ import 'package:mechanics/provider/cart_provider.dart';
 import 'package:mechanics/provider/orders_provider.dart';
 import 'package:mechanics/provider/products_provider.dart';
 import 'package:mechanics/provider/viewed_provider.dart';
-import 'package:mechanics/screens/contact_us.dart';
+import 'package:mechanics/screens/auth/contact_us.dart';
 import 'package:mechanics/provider/wishlist_products_provider.dart';
 import 'package:mechanics/screens/auth/forget_pass.dart';
 import 'package:mechanics/screens/auth/login.dart';

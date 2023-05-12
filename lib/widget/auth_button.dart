@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:mechanics/widget/text_widget.dart';
 
@@ -18,11 +17,10 @@ class AuthButton extends StatelessWidget {
       width: double.infinity,
       child: ElevatedButton(
           style: ElevatedButton.styleFrom(
-            primary: primary, // background (button) color
+            primary: primary,
           ),
           onPressed: () {
             fct();
-            // _submitFormOnLogin();
           },
           child: TextWidget(
             text: buttonText,

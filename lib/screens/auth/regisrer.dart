@@ -1,10 +1,8 @@
-import 'package:card_swiper/card_swiper.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
-import 'package:mechanics/consts/consts.dart';
 import 'package:mechanics/consts/firebase_consts.dart';
 import 'package:mechanics/fetch_screen.dart';
 import 'package:mechanics/screens/auth/forget_pass.dart';
@@ -107,7 +105,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
         child: Stack(
           children: <Widget>[
             Container(
-              color: Color.fromRGBO(119, 16, 76, 1),
+              color: Color.fromRGBO(119, 16, 76, 0.644),
             ),
             SingleChildScrollView(
               padding: const EdgeInsets.all(20),

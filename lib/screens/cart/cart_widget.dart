@@ -63,6 +63,7 @@ class _CartWidgetState extends State<CartWidget> {
                   borderRadius: BorderRadius.circular(12),
                 ),
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
                       height: size.width * 0.25,
@@ -78,11 +79,14 @@ class _CartWidgetState extends State<CartWidget> {
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        TextWidget(
-                          text: getCurrProduct.title,
-                          color: color,
-                          textSize: 20,
-                          isTitle: true,
+                        Container(
+                          width: 180,
+                          child: TextWidget(
+                            text: getCurrProduct.title,
+                            color: color,
+                            textSize: 20,
+                            isTitle: true,
+                          ),
                         ),
                         const SizedBox(
                           height: 16.0,
