@@ -29,10 +29,6 @@ class _ContactUsScreenState extends State<ContactUsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: Text('Contact Us'),
-      //   backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
-      // ),
       body: Container(
         color: Color.fromRGBO(119, 16, 76, 0.644),
         child: LoadingManager(

@@ -24,7 +24,7 @@ class WishlistScreen extends StatelessWidget {
     return wishlistItemsList.isEmpty
         ? const EmptyScreen(
             title: 'Your Wishlist Is Empty',
-            subtitle: 'Explore more and shortlist some items',
+            subtitle: 'Explore more to add items',
             imagePath: 'assets/images/box.png',
             buttonText: 'Add a wish',
           )

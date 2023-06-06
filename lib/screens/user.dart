@@ -106,7 +106,7 @@ class _UserScreenState extends State<UserScreen> {
                     ),
                     children: <TextSpan>[
                       TextSpan(
-                          text: _name == null ? 'user' : _name,
+                          text: _name == null ? 'User' : _name,
                           style: TextStyle(
                             color: color,
                             fontSize: 25,
@@ -120,7 +120,7 @@ class _UserScreenState extends State<UserScreen> {
                   ),
                 ),
                 const SizedBox(
-                  height: 5,
+                  height: 8,
                 ),
                 TextWidget(
                   text: _email == null ? 'Email' : _email!,
@@ -129,7 +129,7 @@ class _UserScreenState extends State<UserScreen> {
                   // isTitle: true,
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 const Divider(
                   thickness: 2,
@@ -139,7 +139,7 @@ class _UserScreenState extends State<UserScreen> {
                   height: 20,
                 ),
                 _listTiles(
-                  title: 'Address 2',
+                  title: 'Address',
                   subtitle: address,
                   icon: IconlyLight.profile,
                   onPressed: () async {
@@ -200,7 +200,7 @@ class _UserScreenState extends State<UserScreen> {
                   title: TextWidget(
                     text: themeState.getDarkTheme ? 'Dark mode' : 'Light mode',
                     color: color,
-                    textSize: 18,
+                    textSize: 20,
                     // isTitle: true,
                   ),
                   secondary: Icon(themeState.getDarkTheme
@@ -317,26 +317,4 @@ class _UserScreenState extends State<UserScreen> {
       },
     );
   }
-
-// // Alternative code for the listTile.
-//   Widget listTileAsRow() {
-//     return Padding(
-//       padding: const EdgeInsets.all(8.0),
-//       child: Row(
-//         children: <Widget>[
-//           const Icon(Icons.settings),
-//           const SizedBox(width: 10),
-//           Column(
-//             crossAxisAlignment: CrossAxisAlignment.start,
-//             children: const [
-//               Text('Title'),
-//               Text('Subtitle'),
-//             ],
-//           ),
-//           const Spacer(),
-//           const Icon(Icons.chevron_right)
-//         ],
-//       ),
-//     );
-//   }
 }
