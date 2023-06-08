@@ -31,8 +31,13 @@ class _ForgetPasswordScreenState extends State<ForgetPasswordScreen> {
   void _forgetPassFCT() async {
     if (_emailTextController.text.isEmpty ||
         !_emailTextController.text.contains("@")) {
-      GlobalMethods.errorDialog(
-          subtitle: 'Please enter a correct email address', context: context);
+      GlobalMethods.warningDialogr(
+          subtitle: 'Please enter a correct email address',
+          context: context,
+          title: '',
+          fct: () {
+            Navigator.canPop(context);
+          });
     } else {
       setState(() {
         _isLoading = true;
