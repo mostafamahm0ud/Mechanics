@@ -200,7 +200,7 @@ class _UserScreenState extends State<UserScreen> {
                   title: TextWidget(
                     text: themeState.getDarkTheme ? 'Dark mode' : 'Light mode',
                     color: color,
-                    textSize: 20,
+                    textSize: 18,
                     // isTitle: true,
                   ),
                   secondary: Icon(themeState.getDarkTheme
@@ -302,7 +302,7 @@ class _UserScreenState extends State<UserScreen> {
       title: TextWidget(
         text: title,
         color: color,
-        textSize: 22,
+        textSize: 18,
         // isTitle: true,
       ),
       subtitle: TextWidget(
