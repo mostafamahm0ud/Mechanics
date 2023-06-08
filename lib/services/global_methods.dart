@@ -3,6 +3,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:mechanics/screens/auth/login.dart';
 import 'package:mechanics/widget/text_widget.dart';
 import 'package:uuid/uuid.dart';
 
@@ -92,7 +93,11 @@ class GlobalMethods {
               TextButton(
                 onPressed: () {
                   if (Navigator.canPop(context)) {
-                    Navigator.pop(context);
+                   Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => const LoginScreen(),
+                        ),
+                      );
                   }
                 },
                 child: TextWidget(
