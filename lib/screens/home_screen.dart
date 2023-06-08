@@ -4,6 +4,7 @@ import 'package:mechanics/consts/consts.dart';
 import 'package:mechanics/inner_screens/feeds_screen.dart';
 import 'package:mechanics/models/products_model.dart';
 import 'package:mechanics/provider/products_provider.dart';
+import 'package:mechanics/screens/Navbar.dart';
 import 'package:mechanics/services/global_methods.dart';
 import 'package:mechanics/services/utils.dart';
 import 'package:mechanics/widget/feed_items.dart';
@@ -27,12 +28,16 @@ class _HomeScreenState extends State<HomeScreen> {
     final productProviders = Provider.of<ProductsProvider>(context);
     List<ProductModel> allProducts = productProviders.getProducts;
     return Scaffold(
+      drawer: NavBar(),
       appBar: AppBar(
-        title: Center(
-          child: Image.asset(
-            "assets/images/MLOGO.png",
-            width: 90,
-          ),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: [
+            Image.asset(
+              "assets/images/MLOGO.png",
+              width: 90,
+            ),
+          ],
         ),
         backgroundColor: Color.fromRGBO(119, 16, 76, 0.644),
       ),
