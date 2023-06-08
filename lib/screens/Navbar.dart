@@ -62,9 +62,9 @@ class NavBar extends StatelessWidget {
             thickness: 2,
             color: color2,
           ),
-          const SizedBox(
-            height: 20,
-          ),
+          // const SizedBox(
+          //   height: 20,
+          // ),
           _listTiles(
             title: user == null ? 'Login' : 'Logout',
             icon: user == null ? IconlyLight.login : IconlyLight.logout,
@@ -92,23 +92,27 @@ class NavBar extends StatelessWidget {
             },
             color: color,
           ),
-          RichText(
-              text: TextSpan(
-                  text: 'Don\'t have an account?',
-                  style: TextStyle(color: color, fontSize: 18),
-                  children: [
-                TextSpan(
-                    text: '  Sign up',
-                    style: const TextStyle(
-                        color: Colors.lightBlue,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600),
-                    recognizer: TapGestureRecognizer()
-                      ..onTap = () {
-                        GlobalMethods.navigateTo(
-                            ctx: context, routeName: RegisterScreen.routeName);
-                      }),
-              ])),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: RichText(
+                text: TextSpan(
+                    text: 'Don\'t have an account?',
+                    style: TextStyle(color: color, fontSize: 18),
+                    children: [
+                  TextSpan(
+                      text: '  Sign up',
+                      style: const TextStyle(
+                          color: Colors.lightBlue,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          GlobalMethods.navigateTo(
+                              ctx: context,
+                              routeName: RegisterScreen.routeName);
+                        }),
+                ])),
+          ),
         ],
       ),
     );
@@ -126,12 +130,6 @@ class NavBar extends StatelessWidget {
         text: title,
         color: color,
         textSize: 22,
-        // isTitle: true,
-      ),
-      subtitle: TextWidget(
-        text: subtitle == null ? "" : subtitle,
-        color: color,
-        textSize: 18,
       ),
       leading: Icon(icon),
       trailing: const Icon(IconlyLight.arrowRight2),
