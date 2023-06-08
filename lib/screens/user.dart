@@ -308,7 +308,7 @@ class _UserScreenState extends State<UserScreen> {
       subtitle: TextWidget(
         text: subtitle == null ? "" : subtitle,
         color: color,
-        textSize: 18,
+        textSize: subtitle == null ? 0 : 18,
       ),
       leading: Icon(icon),
       trailing: const Icon(IconlyLight.arrowRight2),
