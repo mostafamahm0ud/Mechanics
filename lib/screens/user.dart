@@ -4,6 +4,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_iconly/flutter_iconly.dart';
 import 'package:mechanics/consts/firebase_consts.dart';
+import 'package:mechanics/fetch_screen.dart';
 import 'package:mechanics/provider/dark_theme_provider.dart';
 import 'package:mechanics/screens/auth/forget_pass.dart';
 import 'package:mechanics/screens/auth/login.dart';
@@ -232,7 +233,7 @@ class _UserScreenState extends State<UserScreen> {
                           await authInstance.signOut();
                           Navigator.of(context).push(
                             MaterialPageRoute(
-                              builder: (context) => const LoginScreen(),
+                              builder: (context) => const FetchScreen(),
                             ),
                           );
                         },
